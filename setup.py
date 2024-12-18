@@ -4,9 +4,9 @@ setup(
     name="arweave-python",
     version="0.1.0",
     description="A Python library for interacting with the Arweave network",
-    author="Your Name",
-    author_email="your.email@example.com",
-    url="https://github.com/yourusername/arweave-python",
+    author="Mikee",
+    author_email="midashand99@gmail.com",
+    url="https://github.com/c-midas/D-Storeage",
     packages=find_packages(),
     install_requires=[
         "requests>=2.25.1"
