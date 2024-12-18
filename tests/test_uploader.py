@@ -1,9 +1,9 @@
-from arweave.client import ArweaveClient
+from arweave.client import dstore
 from arweave.wallet import Wallet
 from arweave.transaction import Transaction
 from arweave.uploader import FileUploader
 
-client = ArweaveClient()
+client = dstore()
 wallet = Wallet("./wallet.json")
 transaction_handler = Transaction(client, wallet)
 uploader = FileUploader(transaction_handler)

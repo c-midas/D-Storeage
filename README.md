@@ -21,12 +21,12 @@ pip install .
 ### Importing the Library
 
 ```python
-from arweave_client import ArweaveClient
+from arweave_client import dstore
 ```
 ### Initializing the Client
 
 ```python
-client = ArweaveClient(api_url="https://arweave.net")  # Default URL
+client = dstore(api_url="https://arweave.net")  # Default URL
 ```
 ### Sending a POST Request
 
@@ -51,10 +51,10 @@ except requests.exceptions.HTTPError as e:
 ### Posting a Transaction
 
 ```python
-from arweave_client import ArweaveClient
+from arweave_client import dstore
 
 # Initialize the client
-client = ArweaveClient()
+client = dstore()
 
 # Create transaction data
 transaction_data = {
@@ -72,10 +72,10 @@ except requests.exceptions.HTTPError as e:
 ### Fetching Transaction Details
 
 ```python
-from arweave_client import ArweaveClient
+from arweave_client import dstore
 
 # Initialize the client
-client = ArweaveClient()
+client = dstore()
 
 # Transaction ID to fetch
 transaction_id = "example_transaction_id"

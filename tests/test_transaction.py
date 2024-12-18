@@ -1,11 +1,11 @@
 import unittest
-from arweave.client import ArweaveClient
+from arweave.client import dstore
 from arweave.wallet import Wallet
 from arweave.transaction import Transaction
 
 class TestTransaction(unittest.TestCase):
     def setUp(self):
-        self.client = ArweaveClient()
+        self.client = dstore()
         self.wallet = Wallet("./test_wallet.json")
         self.transaction = Transaction(self.client, self.wallet)
 

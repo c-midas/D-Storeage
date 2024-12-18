@@ -1,10 +1,10 @@
 import requests
 
-class ArweaveClient:
+class dstore:
     """
     A lightweight client for interacting with the Arweave blockchain's HTTP API.
 
-    The `ArweaveClient` simplifies sending HTTP requests to the Arweave network. 
+    The `dstore` simplifies sending HTTP requests to the Arweave network. 
     It provides methods to perform `GET` and `POST` operations, abstracting low-level
     HTTP logic while ensuring proper error handling and response parsing.
 
@@ -14,7 +14,7 @@ class ArweaveClient:
 
     def __init__(self, api_url="https://arweave.net"):
         """
-        Initializes the ArweaveClient with a specified API base URL.
+        Initializes the dstore with a specified API base URL.
 
         Args:
             api_url (str): The base URL for the Arweave network API. Defaults to "https://arweave.net".
